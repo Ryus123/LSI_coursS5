@@ -45,11 +45,11 @@ service2 = seq(6)
 Urgence2 = data.frame(service2, Medecin)
 Urgence2
 
-Urgence = merge(x =urgence1, y=Urgence2, by.x = "service", by.y = "service2")
+Urgence = merge(x =urgence1, y=Urgence2, by.x = "service", by.y = "service2", fil)
 Urgence
 
 #Sauvegarde
-save(Urgence, file = "UrgencesHouse.txt", ascii = TRUE)
+write.table(Urgence, "UrgencesHouse.txt", fileEncoding = "UTF-8")
 
 
 

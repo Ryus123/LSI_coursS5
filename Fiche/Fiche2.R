@@ -83,7 +83,7 @@ seq1=seq(as.Date("2015-09-01"), as.Date("2015-09-30"), by = "day")
 data.entree=sample(seq1, size=40, replace=TRUE)
 data.entree
 ###16. Sauvegarde
-save(vect_z,vect_y, file= "ObjetsFiche2.RData")
+save(service, Sexe, Patients,data.entree, vect_z,vect_y, file= "ObjetsFiche2.RData")
 
 
 
